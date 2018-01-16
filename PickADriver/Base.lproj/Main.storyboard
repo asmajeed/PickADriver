@@ -16,10 +16,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwR-v5-5uz">
+                                <rect key="frame" x="248" y="339" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KAY-ji-lbC" kind="show" id="kxq-zI-DJr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vdd-hn-qPm"/>
+                    <navigationItem key="navigationItem" id="vdd-hn-qPm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nNr-ou-bej"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,6 +60,10 @@
                             <outlet property="delegate" destination="KAY-ji-lbC" id="hq7-bK-LCU"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="uZj-7f-XAG"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lK-J4-EqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
