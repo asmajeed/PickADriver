@@ -15,7 +15,7 @@ class NameTableViewController: UITableViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+          loadSampleNames()
         self.clearsSelectionOnViewWillAppear = false
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -51,6 +51,16 @@ class NameTableViewController: UITableViewController {
         }
     }
     
+ func loadSampleNames() {
+        
+      let name1 = Name(name: "Sam")
+     let name2 = Name(name: "Petar")
+       let name3 = Name(name: "Amer")
+    let name4 = Name(name: "beth")
+  
+    
+    names = [name1!, name2!, name3!, name4!]
+    }
 
 
      

@@ -8,13 +8,12 @@
 
 import UIKit
 
-class Name: NSObject
-{
+class Name {
+    
     var name: String
     
     init?(name: String)
     {
-        
         // The name must not be empty
         guard !name.isEmpty else
         {
