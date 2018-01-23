@@ -11,7 +11,7 @@ import UIKit
 class ClassesTableViewController: UITableViewController
 {
     var classes = [String]()
-    
+    var objects = [Any]()
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -29,4 +29,16 @@ class ClassesTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClassesCell", for: indexPath)
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showStudents" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let object = objects[indexPath.row] as! StudentNames
+                let controller = (segue.destination as! UINavigationController).topViewController as! StudentsTableViewController
+               
+                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+    }
+    
 }
