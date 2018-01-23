@@ -9,6 +9,7 @@
 import UIKit
 
 class ClassesTableViewController: UITableViewController
+
 {
     var classes = [String]()
     
@@ -28,5 +29,35 @@ class ClassesTableViewController: UITableViewController
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClassesCell", for: indexPath)
         return cell
+    }
+    @IBAction func addClass(_ sender: UIBarButtonItem)
+    {
+        let alert = UIAlertController(title: "add class", message: nil, preferredStyle: .alert)
+        
+        alert.addTextField
+            {
+                (classTextField) in classTextField.placeholder = "add class"
+         }
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(cancelAction)
+        
+        let addAction = UIAlertAction(title: "Add", style: .default)
+        {
+            (action) in
+            
+            let classTextField = alert.textFields?[0]
+            
+            
+            self.classes.append(classesClass(Name: (classTextField?.text)!))
+            
+            self.tableView.reloadData()
+        }
+        
+        alert.addAction(addAction)
+        
+        present(alert, animated: true, completion: nil)
     }
 }

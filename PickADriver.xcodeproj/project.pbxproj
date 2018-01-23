@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F2125C3200FC7FA00A37C49 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2125C2200FC7FA00A37C49 /* Name.swift */; };
 		3FA23A7B201661DB008F7D8E /* StudentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23A7A201661DB008F7D8E /* StudentsTableViewCell.swift */; };
+		3FA23A7D2017B55F008F7D8E /* classesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23A7C2017B55F008F7D8E /* classesClass.swift */; };
 		3FF6E9CF2007DE05005FC56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6E9CE2007DE05005FC56B /* AppDelegate.swift */; };
 		3FF6E9D12007DE05005FC56B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6E9D02007DE05005FC56B /* ViewController.swift */; };
 		3FF6E9D42007DE05005FC56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF6E9D22007DE05005FC56B /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		3F2125C2200FC7FA00A37C49 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		3FA23A7A201661DB008F7D8E /* StudentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewCell.swift; sourceTree = "<group>"; };
+		3FA23A7C2017B55F008F7D8E /* classesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classesClass.swift; sourceTree = "<group>"; };
 		3FF6E9CB2007DE05005FC56B /* PickADriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickADriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF6E9CE2007DE05005FC56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF6E9D02007DE05005FC56B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				3FF6E9D02007DE05005FC56B /* ViewController.swift */,
 				E02D7E6620165F3200611940 /* HomeScreenViewController.swift */,
 				E02D7E6820165F5700611940 /* ClassesTableViewController.swift */,
+				3FA23A7C2017B55F008F7D8E /* classesClass.swift */,
 				E02D7E6A20165F6400611940 /* StudentsTableViewController.swift */,
 				3FA23A7A201661DB008F7D8E /* StudentsTableViewCell.swift */,
 				3FF6E9D22007DE05005FC56B /* Main.storyboard */,
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02D7E6920165F5700611940 /* ClassesTableViewController.swift in Sources */,
+				3FA23A7D2017B55F008F7D8E /* classesClass.swift in Sources */,
 				3F2125C3200FC7FA00A37C49 /* Name.swift in Sources */,
 				3FA23A7B201661DB008F7D8E /* StudentsTableViewCell.swift in Sources */,
 				E02D7E6720165F3200611940 /* HomeScreenViewController.swift in Sources */,

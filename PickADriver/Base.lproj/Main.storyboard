@@ -62,6 +62,17 @@
                             <outlet property="delegate" destination="uhh-y0-LCS" id="sJE-sm-Uhk"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="1Ku-Bo-7fV">
+                            <connections>
+                                <action selector="addClass:" destination="uhh-y0-LCS" id="Byh-BD-nsL"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="classTableView" destination="4kK-LU-bga" id="uv2-dH-LFO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIg-Rd-sFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
