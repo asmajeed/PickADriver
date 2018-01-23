@@ -10,24 +10,46 @@ import UIKit
 
 class StudentsTableViewController: UITableViewController
 {
-    var students = [String]()
+
+    var names = [Name]()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        self.title = "Students"
+        
+        self.clearsSelectionOnViewWillAppear = false
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int
     {
-        return students.count
+        return 1
     }
-
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return names.count
+    }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StudentsCell", for: indexPath)
-        return cell
+        
+        let cellIdentifier = "StudentsTableViewCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? StudentsTableViewCell
+        
+        let name = names[indexPath.row]
+        
+        return cell!
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+        }
     }
 
 }

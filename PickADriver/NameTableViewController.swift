@@ -8,7 +8,8 @@
 
 import UIKit
 
-class NameTableViewController: UITableViewController {
+class NameTableViewController: UITableViewController
+{
 
     var names = [Name]()
     
