@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="156.97151424287858"/>
         </scene>
-        <!--Classes Table View Controller-->
+        <!--Classes-->
         <scene sceneID="n2U-4p-ORN">
             <objects>
                 <tableViewController id="uhh-y0-LCS" customClass="ClassesTableViewController" customModule="PickADriver" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,12 +62,13 @@
                             <outlet property="delegate" destination="uhh-y0-LCS" id="sJE-sm-Uhk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Classes" id="jC4-rS-6DC" customClass="home"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIg-Rd-sFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1178" y="157"/>
         </scene>
-        <!--Students Table View Controller-->
+        <!--Students-->
         <scene sceneID="C2v-R9-YM8">
             <objects>
                 <tableViewController id="XPB-bo-BCy" customClass="StudentsTableViewController" customModule="PickADriver" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,6 +91,7 @@
                             <outlet property="delegate" destination="XPB-bo-BCy" id="3oD-do-o9T"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Students" id="EqF-UH-1Xq" customClass="home"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9J-4e-rQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
