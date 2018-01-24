@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3F2125C3200FC7FA00A37C49 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2125C2200FC7FA00A37C49 /* Name.swift */; };
+		3FA23A7B201661DB008F7D8E /* StudentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23A7A201661DB008F7D8E /* StudentsTableViewCell.swift */; };
+		3FA23A7D2017B55F008F7D8E /* classesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA23A7C2017B55F008F7D8E /* classesClass.swift */; };
 		3FF6E9CF2007DE05005FC56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6E9CE2007DE05005FC56B /* AppDelegate.swift */; };
 		3FF6E9D42007DE05005FC56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF6E9D22007DE05005FC56B /* Main.storyboard */; };
 		3FF6E9D62007DE05005FC56B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF6E9D52007DE05005FC56B /* Assets.xcassets */; };
 		3FF6E9D92007DE05005FC56B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF6E9D72007DE05005FC56B /* LaunchScreen.storyboard */; };
 		3FF6E9E42007DE05005FC56B /* PickADriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6E9E32007DE05005FC56B /* PickADriverTests.swift */; };
 		3FF6E9EF2007DE06005FC56B /* PickADriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6E9EE2007DE06005FC56B /* PickADriverUITests.swift */; };
+		69D1E21D2017B42300F5EB1E /* StudentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1E21C2017B42300F5EB1E /* StudentNames.swift */; };
 		E02D7E6720165F3200611940 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D7E6620165F3200611940 /* HomeScreenViewController.swift */; };
 		E02D7E6920165F5700611940 /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D7E6820165F5700611940 /* ClassesTableViewController.swift */; };
 		E02D7E6B20165F6400611940 /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D7E6A20165F6400611940 /* StudentsTableViewController.swift */; };
@@ -38,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		3F2125C2200FC7FA00A37C49 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		3FA23A7A201661DB008F7D8E /* StudentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewCell.swift; sourceTree = "<group>"; };
+		3FA23A7C2017B55F008F7D8E /* classesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classesClass.swift; sourceTree = "<group>"; };
 		3FF6E9CB2007DE05005FC56B /* PickADriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickADriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF6E9CE2007DE05005FC56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF6E9D32007DE05005FC56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		3FF6E9EA2007DE06005FC56B /* PickADriverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickADriverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF6E9EE2007DE06005FC56B /* PickADriverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickADriverUITests.swift; sourceTree = "<group>"; };
 		3FF6E9F02007DE06005FC56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D1E21C2017B42300F5EB1E /* StudentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNames.swift; sourceTree = "<group>"; };
 		E02D7E6620165F3200611940 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		E02D7E6820165F5700611940 /* ClassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTableViewController.swift; sourceTree = "<group>"; };
 		E02D7E6A20165F6400611940 /* StudentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +112,9 @@
 				3FF6E9CE2007DE05005FC56B /* AppDelegate.swift */,
 				E02D7E6620165F3200611940 /* HomeScreenViewController.swift */,
 				E02D7E6820165F5700611940 /* ClassesTableViewController.swift */,
+				3FA23A7C2017B55F008F7D8E /* classesClass.swift */,
 				E02D7E6A20165F6400611940 /* StudentsTableViewController.swift */,
+				69D1E21C2017B42300F5EB1E /* StudentNames.swift */,
 				3FF6E9D22007DE05005FC56B /* Main.storyboard */,
 				3F2125C2200FC7FA00A37C49 /* Name.swift */,
 				3FF6E9D52007DE05005FC56B /* Assets.xcassets */,
@@ -269,8 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02D7E6920165F5700611940 /* ClassesTableViewController.swift in Sources */,
+				3FA23A7D2017B55F008F7D8E /* classesClass.swift in Sources */,
 				3F2125C3200FC7FA00A37C49 /* Name.swift in Sources */,
+				3FA23A7B201661DB008F7D8E /* StudentsTableViewCell.swift in Sources */,
 				E02D7E6720165F3200611940 /* HomeScreenViewController.swift in Sources */,
+				69D1E21D2017B42300F5EB1E /* StudentNames.swift in Sources */,
 				E02D7E6B20165F6400611940 /* StudentsTableViewController.swift in Sources */,
 				3FF6E9CF2007DE05005FC56B /* AppDelegate.swift in Sources */,
 			);
@@ -439,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GLDTEVFYK5;
+				DEVELOPMENT_TEAM = LCX585E792;
 				INFOPLIST_FILE = PickADriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Student-bhs.PickADriver";
@@ -454,7 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GLDTEVFYK5;
+				DEVELOPMENT_TEAM = LCX585E792;
 				INFOPLIST_FILE = PickADriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Student-bhs.PickADriver";
