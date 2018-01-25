@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dLN-St-rMX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dLN-St-rMX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,7 +35,7 @@
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="156.97151424287858"/>
         </scene>
-        <!--Classes Table View Controller-->
+        <!--Classes-->
         <scene sceneID="n2U-4p-ORN">
             <objects>
                 <tableViewController id="uhh-y0-LCS" customClass="ClassesTableViewController" customModule="PickADriver" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +44,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cD8-oE-Hcb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassesCell" id="cD8-oE-Hcb">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cD8-oE-Hcb" id="FLB-Dq-r5F">
@@ -53,7 +52,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="XPB-bo-BCy" kind="show" id="dJj-SN-iWJ"/>
+                                    <segue destination="XPB-bo-BCy" kind="show" identifier="showStudents" id="dJj-SN-iWJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,12 +61,13 @@
                             <outlet property="delegate" destination="uhh-y0-LCS" id="sJE-sm-Uhk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Classes" id="jC4-rS-6DC" customClass="home"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIg-Rd-sFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1178" y="157"/>
         </scene>
-        <!--Students Table View Controller-->
+        <!--Students-->
         <scene sceneID="C2v-R9-YM8">
             <objects>
                 <tableViewController id="XPB-bo-BCy" customClass="StudentsTableViewController" customModule="PickADriver" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1TC-Nr-l4j">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1TC-Nr-l4j" customClass="StudentsTableViewCell" customModule="PickADriver" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1TC-Nr-l4j" id="rxD-Jc-fpr">
@@ -90,6 +90,7 @@
                             <outlet property="delegate" destination="XPB-bo-BCy" id="3oD-do-o9T"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Students" id="EqF-UH-1Xq" customClass="home"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9J-4e-rQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,7 +112,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afx-NP-uLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-180" y="157"/>
+            <point key="canvasLocation" x="-286" y="157"/>
         </scene>
     </scenes>
 </document>
