@@ -9,16 +9,16 @@
 import UIKit
 
 class StudentNames: Object {
-    dynamic var name0 = String()
-    dynamic var name1 = String()
-    dynamic var name2 = String()
-    dynamic var name3 = String()
-    dynamic var name4 = String()
-    dynamic var name5 = String()
-    dynamic var name6 = String()
-    dynamic var name7 = String()
-    dynamic var name8 = String()
-    dynamic var name9 = String()
+    @objc dynamic var name0 = String()
+    @objc dynamic var name1 = String()
+    @objc dynamic var name2 = String()
+    @objc dynamic var name3 = String()
+    @objc dynamic var name4 = String()
+    @objc dynamic var name5 = String()
+    @objc dynamic var name6 = String()
+    @objc dynamic var name7 = String()
+    @objc dynamic var name8 = String()
+    @objc dynamic var name9 = String()
     
     convenience init(name0: String, name1: String, name2: String, name3: String, name4: String, name5: String, name6: String, name7: String, name8: String, name9: String){
         self.init()
